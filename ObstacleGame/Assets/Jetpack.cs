@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jetpack : MonoBehaviour
-{
+public class Jetpack : MonoBehaviour {
     
     //Check to see whether we can continue flying up
     private bool fuel;
