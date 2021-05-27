@@ -29,6 +29,6 @@ public class GameManager : MonoBehaviour {
     {
 
         Time.timeScale = 1.0f;
-        SceneManager.LoadScene("Scene2");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

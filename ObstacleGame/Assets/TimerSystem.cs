@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TimerSystem : MonoBehaviour {
-
+    private const double V = 0.0;   
     public Text timerText;
     public float timeLeftSeconds = 3F;
     public static bool TimesUp = false;
@@ -33,6 +33,8 @@ public class TimerSystem : MonoBehaviour {
             timeLeftSeconds = 0;
             timerText.text = minutes + ":" + seconds;
             TimesUp = true;
+            Time.timeScale = (float)V;
+
         }
 
         if (TimesUp == true && Input.GetKeyDown("p"))
