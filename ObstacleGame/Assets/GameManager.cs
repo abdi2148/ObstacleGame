@@ -1,14 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
-
+public class GameManager : MonoBehaviour
+{
     public static GameManager instance = null;
-    public GameObject WinText;
+    public GameObject youWinText;
     public float resetDelay;
-
     void Awake()
     {
         if (instance == null)
@@ -16,18 +14,14 @@ public class GameManager : MonoBehaviour {
         else if (instance != null)
             Destroy(gameObject);
     }
-
     public void Win()
     {
-        WinText.SetActive(true);
-        Time.timeScale = .5f;
-        Invoke("NextScene", resetDelay);
-
+        youWinText.SetActive(true);
+        Time.timeScale = .2f;
+        Invoke("Reset", resetDelay);
     }
-
-    void NextScene()
+    void Reset()
     {
-
         Time.timeScale = 1.0f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
