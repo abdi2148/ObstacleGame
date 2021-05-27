@@ -9,7 +9,7 @@ public class TimerSystem : MonoBehaviour {
     public Text timerText;
     public float timeLeftSeconds = 3F;
     public static bool TimesUp = false;
-    public string SampleScene;
+    public string Scene;
 
     void Start()
     {
@@ -39,14 +39,14 @@ public class TimerSystem : MonoBehaviour {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
         if (TimesUp == true && Input.GetKeyDown("m"))
-            SceneManager.LoadScene(SceneManager.GetSceneByName("MenuScene").buildIndex);
+            SceneManager.LoadScene("MenuScene");
 
     }
 
     void OnGUI()
     {
         if (TimesUp == true)
-            GUI.Box(new Rect(0, 50, 250, 25), "You Lost, press 'P' to play again. Otherwise press 'M' to return back to menu");
+            GUI.Box(new Rect(0, 50, 800, 25), "You Lost! Press 'P' to play again. Otherwise press 'M' to return to the menu");
     }
 
 }
