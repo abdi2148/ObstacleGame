@@ -704,7 +704,7 @@ Transform:
   m_GameObject: {fileID: 238819240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.4, y: 4.97, z: -48.34}
-  m_LocalScale: {x: 10, y: 30, z: 10}
+  m_LocalScale: {x: 15, y: 30, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -1070,7 +1070,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.45, y: 23.44, z: -36.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2046790979}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1265,7 +1266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897979530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.4, y: 8.09, z: -42.22}
+  m_LocalPosition: {x: 19, y: 8.09, z: -34}
   m_LocalScale: {x: 5, y: 30, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1392,7 +1393,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ac99eea98c0b2674f8d78cd3a6940f8d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2286,7 +2287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869440384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.4, y: 8.09, z: -42.19}
+  m_LocalPosition: {x: -21.5, y: 8.09, z: -34.4}
   m_LocalScale: {x: 5, y: 30, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2461,6 +2462,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914424443}
   m_CullTransparentMesh: 0
+--- !u!1 &2046790978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2046790979}
+  - component: {fileID: 2046790980}
+  m_Layer: 0
+  m_Name: QuitOnEscape
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2046790979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046790978}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.3021135, y: -48.619827, z: -22.55872}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 644614842}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2046790980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046790978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc10b73e3f26e8d438f0f6aaf8439537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8234297649668506446
 Transform:
   m_ObjectHideFlags: 0
@@ -2469,7 +2513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8234297649668611950}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -2.77, y: 21.52, z: -49.36}
+  m_LocalPosition: {x: -2.77, y: 21.93, z: -49.36}
   m_LocalScale: {x: 100, y: 99.99997, z: 116.25365}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2488,6 +2532,7 @@ GameObject:
   - component: {fileID: 8234297649670799788}
   - component: {fileID: 8234297649668611953}
   - component: {fileID: 8234297649668611951}
+  - component: {fileID: 8234297649668611952}
   m_Layer: 0
   m_Name: Trophy
   m_TagString: Untagged
@@ -2509,6 +2554,18 @@ CapsuleCollider:
   m_Height: 0.01866095
   m_Direction: 1
   m_Center: {x: 0.000012252945, y: 0.00019105102, z: 0.000014798713}
+--- !u!122 &8234297649668611952
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8234297649668611950}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4279861503
+  m_Size: 5
 --- !u!114 &8234297649668611953
 MonoBehaviour:
   m_ObjectHideFlags: 0

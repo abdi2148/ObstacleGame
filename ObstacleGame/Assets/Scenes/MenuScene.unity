@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 227172810}
   - component: {fileID: 227172809}
   m_Layer: 0
-  m_Name: SceneControl
+  m_Name: ChangeScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -595,7 +595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &490976067
 RectTransform:
   m_ObjectHideFlags: 0
